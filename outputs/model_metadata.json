@@ -1,0 +1,23 @@
+{
+  "model": "MobileNetV2 transfer learning",
+  "image_size": [
+    224,
+    224
+  ],
+  "class_names": [
+    "def_front",
+    "ok_front"
+  ],
+  "class_mapping": {
+    "def_front": 0,
+    "ok_front": 1
+  },
+  "output_meaning": "Probability that the image is OK",
+  "learning_rate": 0.0001,
+  "batch_size": 32,
+  "maximum_epochs": 25,
+  "dropout_rate": 0.3,
+  "optimizer": "Adam",
+  "loss": "Binary cross-entropy",
+  "early_stopping_patience": 5
+}
